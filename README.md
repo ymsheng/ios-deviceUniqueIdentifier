@@ -17,3 +17,5 @@ use the identifierForVendor  property of UIDevice instead.
 所以用advertisingIdentifier做md5后作为设备的唯一标识
 
 详情查看  "UIDevice+IdentifierAddition.h"
+
+- (NSString *) mydeviceUniqueIdentifier 此方法会根据系统小于7.0，会用mac地址md5后作为唯一标识，反之用advertisingIdentifier！
